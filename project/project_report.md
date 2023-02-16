@@ -32,10 +32,10 @@ I will perform more hyperparameter tuning to see if any improves the score.
 | Hpo         | 5             | 1            | 1                | 0.55972 |
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
-![model_train_score.png](img/model_train_score.png)
+![model_train_score.png](model_train_score.png)
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
-![model_test_score.png](img/model_test_score.png)
+![model_test_score.png](model_test_score.png)
 
 ## Summary
 In summary, EDA, feature engineering, and hyperparameter tuning are all critical steps in a machine learning project as they can help to improve the accuracy and generalization ability of a model by identifying and addressing issues with the data, selecting relevant features, and optimizing hyperparameters.
