@@ -24,11 +24,12 @@ After trying different hyper parameters, i.e., I changed the num_bag_folds, num_
 I will perform more hyperparameter tuning to see if any improves the score.
 
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
-  "model": ["initial", "add_features", "hpo"],
-  "num_bag_folds": [0, 0, 5],
-  "num_bag_sets": [1, 1, 1],
-  "num_stack_levels": [0, 0, 1],
-  "score": [1.79121, 0.542157, 0.55972]
+
+| Model       | num_bag_folds | num_bag_sets | num_stack_levels | score   |
+| ----------- | ------------- |-------------------------------- ----------|
+| Initial     | 0             | 1            | 0                | 1.79121 |
+| Add features| 0             | 1            | 0                | 0.542157|
+| Hpo         | 5             | 1            | 1                | 0.55972 |
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 ![model_train_score.png](img/model_train_score.png)
