@@ -14,33 +14,27 @@ WeightedEnsemble_L3. It is a weighted ensemble that aggregates the predictions o
 - I use the pandas.to_datetime() method and datetime.dt.year method to create additional features.
 
 ### How much better did your model preform after adding additional features and why do you think that is?
-The score is improved from 1.80242 to 0.54447 after adding additional features. IMO, the month, day, hour are 3 features which have impact on the bike sharing demand. The added additional features are able to give these information and be trained and involved in the new model which gives us a better prediction on the test data. 
+The score is improved from 1.79121 to 0.542157 after adding additional features. IMO, the month, day, hour are 3 features which have impact on the bike sharing demand. The added additional features are able to give these information and be trained and involved in the new model which gives us a better prediction on the test data. 
 
 ## Hyper parameter tuning
 ### How much better did your model preform after trying different hyper parameters?
-TODO: Add your explanation
+After trying different hyper parameters, i.e., I changed the num_bag_folds, num_bag_sets and num_stack_levels, the scores are much better than the initial model. And it is similar with the result of adding additional features.
 
 ### If you were given more time with this dataset, where do you think you would spend more time?
-TODO: Add your explanation
+I will perform more hyperparameter tuning to see if any improves the score.
 
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
-|model|hpo1|hpo2|hpo3|score|
-|--|--|--|--|--|
-|initial|?|?|?|?|
-|add_features|?|?|?|?|
-|hpo|?|?|?|?|
+  "model": ["initial", "add_features", "hpo"],
+  "num_bag_folds": [0, 0, 5],
+  "num_bag_sets": [1, 1, 1],
+  "num_stack_levels": [0, 0, 1],
+  "score": [1.79121, 0.542157, 0.55972]
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
-
-TODO: Replace the image below with your own.
-
 ![model_train_score.png](img/model_train_score.png)
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
-
-TODO: Replace the image below with your own.
-
 ![model_test_score.png](img/model_test_score.png)
 
 ## Summary
-TODO: Add your explanation
+In summary, EDA, feature engineering, and hyperparameter tuning are all critical steps in a machine learning project as they can help to improve the accuracy and generalization ability of a model by identifying and addressing issues with the data, selecting relevant features, and optimizing hyperparameters.
