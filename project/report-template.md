@@ -3,17 +3,18 @@
 
 ## Initial Training
 ### What did you realize when you tried to submit your predictions? What changes were needed to the output of the predictor to submit your results?
-TODO: Add your explanation
+Kaggle doesn't allow negative values. Hence I need to transform the negative values into 0 before submitting the results. Among all the predicitions I did including initial training, training after EDA and hyper parameter tuning, only the result of hyper parameter tuning contains negative values and needs me to do the transformation.
 
 ### What was the top ranked model that performed?
-TODO: Add your explanation
+WeightedEnsemble_L3. It is a weighted ensemble that aggregates the predictions of many other models. Because a single model may not make the perfect prediction for a given data set. With combining multiple models, we have the chance to boost the overral accuracy.
 
 ## Exploratory data analysis and feature creation
 ### What did the exploratory analysis find and how did you add additional features?
-TODO: Add your explanation
+- From EDA, I was able to find the distribution of the features and the rough distribution of the target (count) and how it is related with the features.
+- I use the pandas.to_datetime() method and datetime.dt.year method to create additional features.
 
 ### How much better did your model preform after adding additional features and why do you think that is?
-TODO: Add your explanation
+The score is improved from 1.80242 to 0.54447 after adding additional features. IMO, the month, day, hour are 3 features which have impact on the bike sharing demand. The added additional features are able to give these information and be trained and involved in the new model which gives us a better prediction on the test data. 
 
 ## Hyper parameter tuning
 ### How much better did your model preform after trying different hyper parameters?
