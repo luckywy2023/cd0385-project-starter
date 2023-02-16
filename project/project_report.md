@@ -26,7 +26,7 @@ I will perform more hyperparameter tuning to see if any improves the score.
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
 
 | Model       | num_bag_folds | num_bag_sets | num_stack_levels | score   |
-| ----------- | ------------- |-------------------------------- ----------|
+| ----------- | ------------- |--------------|----------------- |---------|
 | Initial     | 0             | 1            | 0                | 1.79121 |
 | Add features| 0             | 1            | 0                | 0.542157|
 | Hpo         | 5             | 1            | 1                | 0.55972 |
